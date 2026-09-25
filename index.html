@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parasuvaikkal Service Co-operative Bank | പരശുവയ്ക്കൽ സർവ്വീസ് സഹകരണ ബാങ്ക്</title>
+  <meta name="description" content="Official website of Parasuvaikkal Co-operative Service Bank. Enjoy attractive interest rates up to 8.5% on Fixed Deposits, fast gold loans, agricultural loans, safe lockers, and Neethi services.">
+  
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Parasuvaikkal Service Co-operative Bank">
+  <meta property="og:description" content="Over 50 years of community trust, powered by modern banking. Attractive deposit rates and quick loans.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-building.jpg">
+
+  <!-- Google Fonts: Merriweather (Serif) + Plus Jakarta Sans + Noto Sans Malayalam -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Noto+Sans+Malayalam:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css?v=10">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Main Navigation Header (Exact Karakulam SCB Layout from Image 1)
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="nav-container-fluid">
+      <!-- Official Red Co-operative Bank Signboard Logo (Compact & Responsive) -->
+      <a href="#home" class="bank-signboard-card" aria-label="Parasuvaikkal SCB Home">
+        <div class="signboard-top-row">
+          <div class="signboard-emblem-sq">
+            <img src="assets/logo/app_logo.png" alt="Parasuvaikkal SCB Official Emblem" width="28" height="28">
+          </div>
+          <div class="signboard-names">
+            <span class="signboard-line1" id="logo-line1" data-i18n="logo_line1">Parasuvaikkal Service</span>
+            <span class="signboard-line2" id="logo-line2" data-i18n="logo_line2">Co-operative Bank</span>
+          </div>
+        </div>
+        <div class="signboard-bottom-strip" id="logo-reg-strip" data-i18n="logo_strip">
+          LTD No: 663
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="main-navigation" id="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active" data-i18n="nav_home">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link" data-i18n="nav_about">About Us</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link" data-i18n="nav_services">Services</a></li>
+          <li class="nav-item"><a href="#rates" class="nav-link" data-i18n="nav_rates">Interest Rates</a></li>
+          <li class="nav-item"><a href="#calculators" class="nav-link" data-i18n="nav_calculators">Calculators</a></li>
+          <li class="nav-item"><a href="#branches" class="nav-link" data-i18n="nav_branches">Branches</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact Us</a></li>
+        </ul>
+        <div class="nav-action">
+          <!-- Language Selector (Industry-standard top-right custom dropdown) -->
+          <div class="lang-custom-wrapper">
+            <button type="button" class="lang-toggle-btn" id="lang-toggle-btn" aria-expanded="false" aria-label="Choose Language">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="globe-icon"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              <span id="current-lang-text">English</span>
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="caret-icon"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="lang-custom-menu" id="lang-custom-menu" role="menu">
+              <button type="button" class="lang-menu-item active" data-lang="en" role="menuitem">
+                <span>English</span>
+                <svg class="check-mark" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </button>
+              <button type="button" class="lang-menu-item" data-lang="ml" role="menuitem">
+                <span>മലയാളം</span>
+                <svg class="check-mark" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </button>
+            </div>
+          </div>
+          <a href="tel:04712223456" class="btn-contact-support">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span data-i18n="nav_support">Contact Support</span>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Sub-Header Ribbon (Deep Maroon Rotating Announcement Ticker)
+       ========================================================================== -->
+  <div class="sub-header-bar" id="sub-header-ticker" aria-live="polite">
+    <div class="sub-header-fluid ticker-container">
+      <div class="ticker-badge">
+        <span class="ticker-dot"></span>
+        <span id="ticker-badge-text" data-i18n="ticker_badge">Notice</span>
+      </div>
+      <div class="ticker-track">
+        <span class="ticker-item" id="ticker-text">Attractive Interest Rates: Earn up to 8.50% on Fixed Deposits</span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         4. Hero Section (Split Trust Banner with Building & Floating Badge)
+         ========================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-tag" data-i18n="hero_tag">ESTABLISHED 1968</span>
+          <h1 class="hero-title" data-i18n="hero_title">Over 50 Years of Trust, Powered by Modern Banking</h1>
+          <p class="hero-description" data-i18n="hero_desc">
+            Since 1968, Parasuvaikkal Service Co-operative Bank has been the financial backbone of the Parassala & Neyyattinkara rural community. Enjoy competitive interest rates up to 8.5% on Fixed Deposits and fast, hassle-free loan approvals.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#services" class="btn-hero-primary">
+              <span data-i18n="hero_btn_explore">Explore Our Services</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+            <a href="#rates" class="btn-hero-outline" data-i18n="hero_btn_rates">
+              View Interest Rates
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <img src="assets/images/hero-building.jpg" alt="Parasuvaikkal Service Co-operative Bank Head Office" width="800" height="600" loading="eager">
+          </div>
+          <div class="hero-badge-overlay">
+            <span class="hero-badge-number">50+</span>
+            <span class="hero-badge-text" data-i18n="hero_badge_text">Years of Experience & Trust</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. Services Grid (Deposit Schemes, Loan Offerings, Neethi Store)
+         ========================================================================== -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pretitle" data-i18n="offer_tag">WHAT WE OFFER</span>
+          <h2 class="section-title" data-i18n="offer_title">Explore Our Financial Services</h2>
+          <p class="section-description" data-i18n="offer_desc">
+            Tailored banking and welfare solutions designed to empower families, farmers, small businesses, and senior citizens.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Deposit Schemes -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="assets/images/deposit-scheme.jpg" alt="Deposit Schemes and Savings" width="600" height="400" loading="lazy">
+              <div class="service-card-badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <span class="service-card-tag" data-i18n="srv_dep_tag">GROW YOUR WEALTH SECURELY</span>
+              <h3 class="service-card-title" data-i18n="srv_dep_title">Deposit Schemes</h3>
+              <p class="service-card-text" data-i18n="srv_dep_desc">
+                From attractive 8.5% fixed deposits to flexible recurring and savings schemes, earn guaranteed returns with special higher rates for senior citizens.
+              </p>
+              <div class="service-card-footer">
+                <a href="#rates" class="service-learn-more">
+                  Learn More
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Loan Offerings -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="assets/images/loan-offering.jpg" alt="Loan Offerings and Agreements" width="600" height="400" loading="lazy">
+              <div class="service-card-badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <span class="service-card-tag" data-i18n="srv_loan_tag">HASSLE-FREE FINANCIAL SUPPORT</span>
+              <h3 class="service-card-title" data-i18n="srv_loan_title">Loan Offerings</h3>
+              <p class="service-card-text" data-i18n="srv_loan_desc">
+                Get quick loan approvals with minimal documentation for Gold loans, agricultural subsidies, housing construction, MSME, and personal credit needs.
+              </p>
+              <div class="service-card-footer">
+                <a href="#rates" class="service-learn-more">
+                  Learn More
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Neethi Store & Allied Initiatives -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="assets/images/community-store.jpg" alt="Neethi Medical Store and Supermarket" width="600" height="400" loading="lazy">
+              <div class="service-card-badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+              </div>
+            </div>
+            <div class="service-card-body">
+              <span class="service-card-tag" data-i18n="srv_comm_tag">COMMUNITY-FIRST INITIATIVES</span>
+              <h3 class="service-card-title" data-i18n="srv_comm_title">Neethi Store & Services</h3>
+              <p class="service-card-text" data-i18n="srv_comm_desc">
+                Explore our subsidized Neethi medical store, consumer supermarket, and organic farming distribution points aimed at uplifting our local village society.
+              </p>
+              <div class="service-card-footer">
+                <a href="#about" class="service-learn-more">
+                  Learn More
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. Our Heritage Section (Karakulam Split Narrative & Stat Cards)
+         ========================================================================== -->
+    <section class="heritage-section" id="about">
+      <div class="container heritage-grid">
+        <div class="heritage-content">
+          <span class="heritage-pretitle" data-i18n="heritage_tag">OUR HERITAGE</span>
+          <h2 class="heritage-title" data-i18n="heritage_title">Serving Parasuvaikkal Since 1968</h2>
+          <p class="heritage-text">
+            Founded with a singular mission to serve as the financial foundation for the rural and agrarian population of Southern Kerala, the <strong>Parasuvaikkal Service Co-operative Bank</strong> has stood firm as a pillar of trust, empowerment, and mutual progress.
+          </p>
+          <p class="heritage-text">
+            Today, our working jurisdiction covers Parasuvaikkal, Parassala, and surrounding rural neighborhoods. We continuously aspire to operate as a transparent, technologically advanced, and socially responsible institution—ensuring members receive maximum value for their savings while accelerating local grassroots prosperity.
+          </p>
+        </div>
+
+        <div class="heritage-cards">
+          <!-- Stat Card 1 -->
+          <div class="heritage-stat-card">
+            <div class="stat-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div class="stat-details">
+              <h4>50+ Years</h4>
+              <p>Of Unshakable Trust & Community Goodwill</p>
+            </div>
+          </div>
+
+          <!-- Stat Card 2 -->
+          <div class="heritage-stat-card">
+            <div class="stat-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div class="stat-details">
+              <h4>Parasuvaikkal & Parassala</h4>
+              <p>Extensive Area Jurisdiction & Membership Network</p>
+            </div>
+          </div>
+
+          <!-- Stat Card 3 -->
+          <div class="heritage-stat-card">
+            <div class="stat-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 10h18M5 10v11M9 10v11M15 10v11M19 10v11M12 2L2 7h20L12 2z"></path></svg>
+            </div>
+            <div class="stat-details">
+              <h4>Class-1 Special Grade</h4>
+              <p>Recognized Cooperative Society Reg No: 663</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. Core Banking Features (3 Floating Cards)
+         ========================================================================== -->
+    <section class="features-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pretitle" data-i18n="feat_tag">WHY CHOOSE US</span>
+          <h2 class="section-title" data-i18n="feat_title">Our Core Banking Features</h2>
+          <p class="section-description">
+            Modern, secure, and customer-first banking facilities delivered right at your doorstep.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="feature-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h3 class="feature-title">Easy Loan Approval</h3>
+            <p class="feature-text">
+              Parasuvaikkal Service Co-operative Bank provides fast loan sanctions with minimal paperwork and transparent terms. Get instant disbursals for Gold loans and small business needs.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="feature-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="5" x2="5" y2="19"></line><circle cx="6.5" cy="6.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg>
+            </div>
+            <h3 class="feature-title">High Interest in FD</h3>
+            <p class="feature-text">
+              We offer leading interest rates on fixed and recurring deposits to help your savings grow safely. Senior citizens enjoy an additional 0.50% bonus on all term deposits.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="feature-icon-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3 class="feature-title">Safe Locker Facility</h3>
+            <p class="feature-text">
+              Keep your gold jewelry, land deeds, and valuables safeguarded in our state-of-the-art secure safe deposit lockers with dual-key authentication and surveillance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. Interactive Financial Calculators (FD & EMI)
+         ========================================================================== -->
+    <section class="calculators-section" id="calculators">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pretitle">PLAN YOUR FINANCES</span>
+          <h2 class="section-title">Interactive Financial Calculators</h2>
+          <p class="section-description">
+            Calculate your deposit maturity value or loan monthly installments instantly before making a decision.
+          </p>
+        </div>
+
+        <div class="calc-container">
+          <!-- Tab Navigation -->
+          <div class="calc-tabs">
+            <button class="calc-tab-btn active" data-tab="tab-fd">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Fixed Deposit (FD) Calculator
+            </button>
+            <button class="calc-tab-btn" data-tab="tab-emi">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              Loan EMI Calculator
+            </button>
+          </div>
+
+          <!-- FD Tab Content -->
+          <div class="calc-content active" id="tab-fd">
+            <div class="calc-layout">
+              <div class="calc-inputs">
+                <!-- Principal -->
+                <div class="input-group">
+                  <div class="input-header">
+                    <label class="input-label" for="fd-amount">Deposit Amount (₹)</label>
+                    <span class="input-val-badge" id="fd-amount-val">₹ 1,00,000</span>
+                  </div>
+                  <input type="range" class="range-slider" id="fd-amount" min="10000" max="2500000" step="10000" value="100000">
+                </div>
+
+                <!-- Tenure -->
+                <div class="input-group">
+                  <div class="input-header">
+                    <label class="input-label" for="fd-tenure">Investment Duration</label>
+                    <span class="input-val-badge" id="fd-tenure-val">3 Years</span>
+                  </div>
+                  <input type="range" class="range-slider" id="fd-tenure" min="1" max="10" step="1" value="3">
+                </div>
+
+                <!-- Citizen Category -->
+                <div class="input-group">
+                  <div class="input-header">
+                    <label class="input-label" for="fd-citizen-type">Depositor Category</label>
+                    <span class="input-val-badge" id="fd-rate-applied">8.50% p.a.</span>
+                  </div>
+                  <select id="fd-citizen-type" class="calc-select-input">
+                    <option value="regular">Regular Citizen (8.00% - 8.50%)</option>
+                    <option value="senior">Senior Citizen (+0.50% Extra: Up to 9.00%)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- FD Results Box -->
+              <div class="calc-results-box">
+                <div class="calc-result-item">
+                  <span class="result-label">Total Maturity Amount</span>
+                  <span class="result-val highlight" id="fd-maturity-amount">₹ 1,28,336</span>
+                </div>
+                <div class="calc-result-item">
+                  <span class="result-label">Total Interest Earned</span>
+                  <span class="result-val" id="fd-interest-earned">₹ 28,336</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- EMI Tab Content -->
+          <div class="calc-content" id="tab-emi">
+            <div class="calc-layout">
+              <div class="calc-inputs">
+                <!-- Loan Amount -->
+                <div class="input-group">
+                  <div class="input-header">
+                    <label class="input-label" for="emi-amount">Loan Amount (₹)</label>
+                    <span class="input-val-badge" id="emi-amount-val">₹ 5,00,000</span>
+                  </div>
+                  <input type="range" class="range-slider" id="emi-amount" min="25000" max="3000000" step="25000" value="500000">
+                </div>
+
+                <!-- Rate of Interest -->
+                <div class="input-group">
+                  <div class="input-header">
+                    <label class="input-label" for="emi-rate">Interest Rate (% p.a.)</label>
+                    <span class="input-val-badge" id="emi-rate-val">9.5%</span>
+                  </div>
+                  <input type="range" class="range-slider" id="emi-rate" min="8.0" max="15.0" step="0.25" value="9.5">
+                </div>
+
+                <!-- Tenure in Years -->
+                <div class="input-group">
+                  <div class="input-header">
+                    <label class="input-label" for="emi-tenure">Loan Tenure</label>
+                    <span class="input-val-badge" id="emi-tenure-val">5 Years</span>
+                  </div>
+                  <input type="range" class="range-slider" id="emi-tenure" min="1" max="15" step="1" value="5">
+                </div>
+              </div>
+
+              <!-- EMI Results Box -->
+              <div class="calc-results-box">
+                <div class="calc-result-item">
+                  <span class="result-label">Monthly EMI Payment</span>
+                  <span class="result-val highlight" id="emi-monthly-val">₹ 10,501</span>
+                </div>
+                <div class="calc-result-item">
+                  <span class="result-label">Total Interest Payable</span>
+                  <span class="result-val" id="emi-total-interest">₹ 1,30,060</span>
+                </div>
+                <div class="calc-result-item">
+                  <span class="result-label">Total Payment (Principal + Interest)</span>
+                  <span class="result-val" id="emi-total-payment">₹ 6,30,060</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. Interest Rates Schedule Tables (Side-by-Side)
+         ========================================================================== -->
+    <section class="rates-section" id="rates">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pretitle">CURRENT SCHEDULE</span>
+          <h2 class="section-title">Latest Interest Rates</h2>
+          <p class="section-description">
+            Transparent and market-leading deposit returns and low-interest community loans.
+          </p>
+        </div>
+
+        <div class="rates-grid">
+          <!-- Term Deposit Table -->
+          <div class="rates-table-card">
+            <div class="rates-table-header">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              <h3>Term Deposit Interest Rates</h3>
+            </div>
+            <table class="rates-table">
+              <thead>
+                <tr>
+                  <th>Tenure Period</th>
+                  <th>General Public</th>
+                  <th>Senior Citizens</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>15 Days to 45 Days</td>
+                  <td>5.50%</td>
+                  <td>6.00%</td>
+                </tr>
+                <tr>
+                  <td>46 Days to 90 Days</td>
+                  <td>6.25%</td>
+                  <td>6.75%</td>
+                </tr>
+                <tr>
+                  <td>91 Days to 179 Days</td>
+                  <td>7.00%</td>
+                  <td>7.50%</td>
+                </tr>
+                <tr>
+                  <td>180 Days to 364 Days</td>
+                  <td>7.50%</td>
+                  <td>8.00%</td>
+                </tr>
+                <tr>
+                  <td><strong>1 Year to 2 Years</strong></td>
+                  <td><span class="rates-badge">8.00%</span></td>
+                  <td><span class="rates-badge">8.50%</span></td>
+                </tr>
+                <tr>
+                  <td><strong>2 Years & Above (Special)</strong></td>
+                  <td><span class="rates-badge">8.50%</span></td>
+                  <td><span class="rates-badge">9.00%</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Loan Schemes Table -->
+          <div class="rates-table-card">
+            <div class="rates-table-header">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+              <h3>Loan Scheme Rates</h3>
+            </div>
+            <table class="rates-table">
+              <thead>
+                <tr>
+                  <th>Loan Category</th>
+                  <th>Interest Rate (p.a.)</th>
+                  <th>Sanction Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Gold Loan (Swarna Panayam)</strong></td>
+                  <td><span class="rates-badge">8.50%</span></td>
+                  <td>Immediate (15 Mins)</td>
+                </tr>
+                <tr>
+                  <td>Agricultural / Kisan Loan</td>
+                  <td>Subsidized / 4.00%</td>
+                  <td>2-3 Days</td>
+                </tr>
+                <tr>
+                  <td>Self-Help Group (Kudumbashree)</td>
+                  <td>7.00%</td>
+                  <td>Fast-track</td>
+                </tr>
+                <tr>
+                  <td>Housing & Renovation Loan</td>
+                  <td>9.25%</td>
+                  <td>3-5 Days</td>
+                </tr>
+                <tr>
+                  <td>Personal & Overdraft Loan</td>
+                  <td>10.50%</td>
+                  <td>1-2 Days</td>
+                </tr>
+                <tr>
+                  <td>Small Business / MSME Loan</td>
+                  <td>9.75%</td>
+                  <td>3-4 Days</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. Branch Network & Interactive Switcher (Karakulam Style)
+         ========================================================================== -->
+    <section class="branches-section" id="branches">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pretitle">LOCATE US</span>
+          <h2 class="section-title">Our Branch Network</h2>
+          <p class="section-description">
+            Visit any of our convenient service branches across Parasuvaikkal and Parassala.
+          </p>
+        </div>
+
+        <div class="branches-layout">
+          <!-- Left: Branch Selector List -->
+          <div class="branch-selector-list" role="tablist">
+            <div class="branch-nav-item active" data-branch="head-office" role="tab" tabindex="0">
+              <div>
+                <h4 class="branch-nav-title">Head Office & Main Branch</h4>
+                <p class="branch-nav-sub">Parasuvaikkal Junction</p>
+              </div>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </div>
+
+            <div class="branch-nav-item" data-branch="evening-branch" role="tab" tabindex="0">
+              <div>
+                <h4 class="branch-nav-title">Parassala Evening Branch</h4>
+                <p class="branch-nav-sub">Near KSRTC Bus Stand</p>
+              </div>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </div>
+
+            <div class="branch-nav-item" data-branch="extension-counter" role="tab" tabindex="0">
+              <div>
+                <h4 class="branch-nav-title">Kudayal Extension & Neethi Store</h4>
+                <p class="branch-nav-sub">Kudayal Junction</p>
+              </div>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </div>
+          </div>
+
+          <!-- Right: Active Branch Detail Display Pane -->
+          <div class="branch-display-pane" id="active-branch-card">
+            <div class="branch-info-header">
+              <span class="branch-info-tag" id="branch-info-tag">Head Office & Main Branch</span>
+              <h3 class="branch-info-title" id="branch-info-title">Parasuvaikkal Main Branch</h3>
+            </div>
+
+            <div class="branch-meta-list">
+              <div class="branch-meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span id="branch-address-text">Parasuvaikkal P.O., Near Parassala, Thiruvananthapuram, Kerala - 695508</span>
+              </div>
+              <div class="branch-meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span id="branch-phone-text">0471 - 2223456 / 2223457</span>
+              </div>
+              <div class="branch-meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                <span id="branch-hours-text">Mon - Sat: 9:30 AM to 4:30 PM (2nd & 4th Sat Holidays)</span>
+              </div>
+              <div class="branch-meta-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span id="branch-manager-text">Branch Manager: 94471 23456</span>
+              </div>
+            </div>
+
+            <a href="https://maps.google.com/?q=Parasuvaikkal+Kerala" target="_blank" rel="noopener noreferrer" class="btn-directions" id="branch-map-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+              Get Directions on Map
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         11. Member Testimonials
+         ========================================================================== -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pretitle">COMMUNITY VOICES</span>
+          <h2 class="section-title">What Our Members Say</h2>
+          <p class="section-description">
+            Hear from families and local entrepreneurs who trust Parasuvaikkal SCB for their banking needs.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              "The gold loan service at Parasuvaikkal SCB was a lifesaver during our family medical emergency. Transparent valuation and money in hand within 15 minutes."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SK</div>
+              <div class="author-info">
+                <h5>Suresh Kumar</h5>
+                <span>Member Since 2004 • Parassala</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              "We have kept our fixed deposits here for 12 years. The senior citizen interest rate of 8.5% is significantly higher than commercial banks, and the staff treats us like family."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RM</div>
+              <div class="author-info">
+                <h5>Radhamani Amma</h5>
+                <span>Senior Citizen Depositor • Parasuvaikkal</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars-rating">★★★★★</div>
+            <p class="testimonial-quote">
+              "Our Kudumbashree unit received timely agricultural credit and market linkage support. The Neethi Store facility nearby is a huge blessing for the whole village."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar">LA</div>
+              <div class="author-info">
+                <h5>Latha Anirudhan</h5>
+                <span>SHG Secretary • Kudayal</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       12. Footer (Karakulam Dark Burgundy Style)
+       ========================================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Registration -->
+        <div class="footer-col">
+          <div style="display: flex; align-items: center; gap: 0.85rem; margin-bottom: 1rem;">
+            <img src="assets/logo/app_logo.png" alt="Parasuvaikkal SCB Emblem" width="52" height="52" style="background: #ffffff; border-radius: 50%; padding: 2px; flex-shrink: 0; box-shadow: 0 2px 6px rgba(0,0,0,0.3);">
+            <div>
+              <h3 class="footer-brand-title" data-i18n="brand_title">Parasuvaikkal Service Co-operative Bank</h3>
+              <p class="footer-brand-sub" data-i18n="brand_sub">LTD No: 663 • Class-1 Special Grade Bank</p>
+            </div>
+          </div>
+          <p class="footer-about-text">
+            Serving the people with complete transparency, cooperative fellowship, and modern financial services since 1968. Registered under the Kerala Co-operative Societies Act 1969.
+          </p>
+          <span class="coop-badge">🏛️ Class-1 Special Grade Co-operative Bank</span>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Our Bank</a></li>
+            <li><a href="#services">Deposit & Loan Schemes</a></li>
+            <li><a href="#rates">Latest Interest Rates</a></li>
+            <li><a href="#calculators">FD & Loan EMI Calculators</a></li>
+            <li><a href="#branches">Branch & ATM Network</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Official Contact -->
+        <div class="footer-col">
+          <h4>Head Office Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Parasuvaikkal P.O., Near Parassala, Thiruvananthapuram, Kerala - 695508</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>0471-2223456 / 2223457</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>info@parasuvaikkalscb.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Parasuvaikkal Service Co-operative Bank Ltd. No. 663. All Rights Reserved.</p>
+        <p>Registered under Kerala Co-operative Societies Act 1969 | Monitored by Department of Co-operation, Govt. of Kerala</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/app.js?v=5"></script>
+</body>
+</html>

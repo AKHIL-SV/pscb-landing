@@ -1,0 +1,1969 @@
+/* ==========================================================================
+   Parasuvaikkal Co-operative Service Bank (PCSB) - Stylesheet
+   Design Inspiration: Karakulam SCB (karakulamscb.com)
+   Palette: Deep Crimson (#8B1519), Dark Burgundy (#5B0E11), Gold (#C59B27)
+   ========================================================================== */
+
+:root {
+  /* Primary Brand Colors */
+  --color-primary: #8b1519;
+  --color-primary-dark: #6e0e11;
+  --color-primary-deep: #520a0d;
+  --color-primary-light: #ab1d22;
+  --color-primary-subtle: #fdf2f2;
+  --color-primary-tint: rgba(139, 21, 25, 0.08);
+
+  /* Accent Colors */
+  --color-accent-gold: #c59b27;
+  --color-accent-gold-light: #dfb648;
+  --color-accent-gold-soft: #fcf6e8;
+
+  /* Neutral Tones */
+  --color-bg-body: #f8f9fa;
+  --color-bg-white: #ffffff;
+  --color-bg-warm: #fcf9f6;
+  --color-border: #e9ecef;
+  --color-border-subtle: #f1f3f5;
+
+  /* Typography Colors */
+  --color-text-main: #1f2937;
+  --color-text-heading: #111827;
+  --color-text-muted: #6b7280;
+  --color-text-light: #9ca3af;
+  --color-text-white: #ffffff;
+
+  /* Typography Families */
+  --font-heading: 'Merriweather', 'Playfair Display', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-malayalam: 'Noto Sans Malayalam', 'Manjari', sans-serif;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-crimson: 0 10px 25px -5px rgba(139, 21, 25, 0.25);
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Base Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg-body);
+  color: var(--color-text-main);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  font-family: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ==========================================================================
+   Main Header & Navigation (Full-Width Expanded Layout from Screenshot)
+   ========================================================================== */
+.site-header {
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #f0f0f0;
+  width: 100%;
+}
+
+.site-header.scrolled {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container-fluid {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+
+/* Official Red Bank Signboard Card (Compact, Elegant, and Proportional) */
+.bank-signboard-card {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: #cf101a; /* Vibrant bank red */
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  transition: var(--transition);
+  flex-shrink: 0;
+  min-width: 195px;
+}
+
+.bank-signboard-card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.22);
+}
+
+.signboard-top-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.22rem 0.65rem 0.2rem 0.35rem;
+}
+
+.signboard-emblem-sq {
+  width: 28px;
+  height: 28px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+  flex-shrink: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.signboard-emblem-sq img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.signboard-names {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signboard-line1,
+.signboard-line2 {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+.signboard-bottom-strip {
+  background-color: #0c0c0c;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 0.52rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.08rem 0.35rem;
+  letter-spacing: 0.4px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  height: 100%;
+  min-width: 0;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 0;
+  margin: 0 auto;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.nav-item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: #334155;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 0.95rem;
+  transition: var(--transition);
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Home active tab matching screenshot */
+.nav-link.active {
+  background-color: #faf0f0;
+  color: #cf101a;
+  font-weight: 700;
+}
+
+.nav-link:hover {
+  color: #cf101a;
+  background-color: #fdf5f5;
+}
+
+.nav-action {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  min-width: 250px;
+  flex-shrink: 0;
+}
+
+/* Industry-standard interactive language selector in top-right nav bar */
+.lang-custom-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.lang-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: #f8f9fa;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  padding: 0.46rem 0.75rem;
+  font-family: var(--font-body);
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #1e293b;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+  user-select: none;
+  line-height: 1;
+}
+
+.lang-toggle-btn:hover {
+  background: #f1f3f5;
+  border-color: #94a3b8;
+  color: #8b1519;
+}
+
+.lang-toggle-btn:focus-visible {
+  outline: 2px solid #8b1519;
+  outline-offset: 2px;
+}
+
+.lang-toggle-btn .globe-icon {
+  color: #8b1519;
+  flex-shrink: 0;
+}
+
+.lang-toggle-btn .caret-icon {
+  color: #64748b;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.lang-custom-wrapper.open .lang-toggle-btn .caret-icon {
+  transform: rotate(180deg);
+}
+
+.lang-custom-wrapper.open .lang-toggle-btn {
+  background: #ffffff;
+  border-color: #8b1519;
+  box-shadow: 0 0 0 3px rgba(139, 21, 25, 0.12);
+}
+
+.lang-custom-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 145px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 0.35rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.2rem;
+  z-index: 1050;
+  animation: langFadeIn 0.15s ease;
+}
+
+@keyframes langFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.lang-custom-wrapper.open .lang-custom-menu {
+  display: flex;
+}
+
+.lang-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #334155;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.lang-menu-item:hover {
+  background-color: #fcf0f0;
+  color: #8b1519;
+}
+
+.lang-menu-item.active {
+  background-color: #faebeb;
+  color: #8b1519;
+  font-weight: 700;
+}
+
+.lang-menu-item .check-mark {
+  color: #8b1519;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.lang-menu-item.active .check-mark {
+  opacity: 1;
+}
+
+html[lang="ml"] #current-lang-text,
+html[lang="ml"] .lang-menu-item[data-lang="ml"] {
+  font-family: var(--font-malayalam);
+  font-size: 0.8rem;
+}
+
+.btn-contact-support {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background-color: #a3231d;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.84rem;
+  padding: 0.52rem 1.15rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(163, 35, 29, 0.25);
+  transition: var(--transition);
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn-contact-support:hover {
+  background-color: #8b1519;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(163, 35, 29, 0.35);
+}
+
+/* Dedicated compact typography & spacing for Malayalam navigation to eliminate overflow */
+html[lang="ml"] .nav-link {
+  font-family: var(--font-malayalam);
+  font-size: 0.78rem;
+  padding: 0 0.55rem;
+  letter-spacing: -0.2px;
+  white-space: nowrap !important;
+}
+
+html[lang="ml"] .nav-link.active {
+  padding: 0 0.75rem;
+}
+
+html[lang="ml"] .btn-contact-support {
+  font-family: var(--font-malayalam);
+  font-size: 0.76rem;
+  padding: 0.42rem 0.85rem;
+  letter-spacing: -0.2px;
+  white-space: nowrap !important;
+}
+
+html[lang="ml"] .main-navigation {
+  margin-left: 0;
+}
+
+html[lang="ml"] .signboard-line1,
+html[lang="ml"] .signboard-line2 {
+  font-size: 0.68rem;
+}
+
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--color-text-heading);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* ==========================================================================
+   Sub-Header Ribbon: Modern Rotating Announcement Ticker
+   ========================================================================== */
+.sub-header-bar {
+  background-color: #640d14; /* Deep rich maroon */
+  color: #ffffff;
+  padding: 0.35rem 0;
+  font-size: 0.85rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  position: relative;
+  z-index: 90;
+}
+
+.ticker-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 24px;
+  box-sizing: border-box;
+}
+
+.ticker-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #d97706; /* Warm gold/amber */
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  padding: 0.12rem 0.55rem;
+  border-radius: 4px;
+  flex-shrink: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.ticker-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  animation: tickerPulse 1.8s infinite;
+}
+
+@keyframes tickerPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.75);
+  }
+}
+
+.ticker-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 24px;
+  position: relative;
+  flex: 1;
+  max-width: 850px;
+  text-align: center;
+  min-width: 0;
+}
+
+.ticker-item {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 500;
+  font-size: 0.84rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ticker-item.fade-out {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+.ticker-item.fade-in {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+html[lang="ml"] .ticker-item {
+  font-family: var(--font-malayalam);
+  font-size: 0.8rem;
+}
+
+html[lang="ml"] #ticker-badge-text {
+  font-family: var(--font-malayalam);
+  font-size: 0.68rem;
+}
+
+
+
+
+
+/* ==========================================================================
+   Hero Section (Karakulam Split Red Hero Style)
+   ========================================================================== */
+.hero-section {
+  background-color: var(--color-primary);
+  color: var(--color-text-white);
+  padding: 4.5rem 0 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.08), transparent 70%);
+  pointer-events: none;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 3.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-tag {
+  color: var(--color-accent-gold-light);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-tag::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 2px;
+  background-color: var(--color-accent-gold-light);
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: 2.75rem;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.5px;
+}
+
+.hero-description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  max-width: 540px;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-hero-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-bg-white);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+}
+
+.btn-hero-primary:hover {
+  background-color: var(--color-accent-gold-soft);
+  color: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.btn-hero-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  color: var(--color-text-white);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.btn-hero-outline:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #fff;
+}
+
+/* Hero Image Card & Floating Badge */
+.hero-visual {
+  position: relative;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  border: 4px solid rgba(255, 255, 255, 0.15);
+  max-height: 480px;
+}
+
+.hero-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.hero-image-wrapper:hover img {
+  transform: scale(1.03);
+}
+
+.hero-badge-overlay {
+  position: absolute;
+  bottom: -15px;
+  left: -20px;
+  background-color: var(--color-bg-white);
+  color: var(--color-primary);
+  padding: 1.15rem 1.65rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 5px solid var(--color-primary);
+  z-index: 5;
+}
+
+.hero-badge-number {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--color-primary);
+}
+
+.hero-badge-text {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-text-heading);
+  letter-spacing: 1px;
+  margin-top: 0.25rem;
+}
+
+/* ==========================================================================
+   Section Title Standard (Karakulam Style)
+   ========================================================================== */
+.section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.section-pretitle {
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  color: var(--color-text-heading);
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-full);
+}
+
+.section-description {
+  color: var(--color-text-muted);
+  max-width: 620px;
+  margin: 1rem auto 0;
+  font-size: 1rem;
+}
+
+/* ==========================================================================
+   What We Offer / Financial Services Grid
+   ========================================================================== */
+.services-section {
+  padding: 5rem 0;
+  background-color: var(--color-bg-white);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service-card {
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border-subtle);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.service-card-media {
+  position: relative;
+  height: 220px;
+  overflow: visible; /* allows badge icon to overlap without clipping */
+}
+
+.service-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.service-card:hover .service-card-media img {
+  transform: scale(1.06);
+}
+
+.service-card-badge-icon {
+  position: absolute;
+  bottom: -22px;
+  left: 1.5rem;
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-primary);
+  color: var(--color-text-white);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  z-index: 10;
+  border: 2.5px solid #ffffff;
+}
+
+.service-card-badge-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.service-card-body {
+  padding: 2.25rem 1.75rem 1.75rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.service-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-text-heading);
+  margin-bottom: 0.75rem;
+}
+
+.service-card-text {
+  font-size: 0.925rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.service-card-footer {
+  border-top: 1px solid var(--color-border);
+  padding-top: 1rem;
+}
+
+.service-learn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--color-primary);
+  transition: var(--transition);
+}
+
+.service-learn-more:hover {
+  color: var(--color-primary-dark);
+  gap: 0.75rem;
+}
+
+/* ==========================================================================
+   Our Heritage Section (Karakulam Split Narrative & Cards)
+   ========================================================================== */
+.heritage-section {
+  padding: 5rem 0;
+  background-color: var(--color-bg-warm);
+}
+
+.heritage-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.heritage-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.heritage-pretitle {
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.heritage-title {
+  font-family: var(--font-heading);
+  font-size: 2.25rem;
+  color: var(--color-text-heading);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.heritage-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 45px;
+  height: 3px;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-full);
+}
+
+.heritage-text {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-text-main);
+  margin-top: 1.25rem;
+}
+
+.heritage-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.heritage-stat-card {
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  border: 1px solid var(--color-border);
+  transition: var(--transition);
+}
+
+.heritage-stat-card:hover {
+  transform: translateX(6px);
+  box-shadow: var(--shadow-md);
+}
+
+.stat-icon-box {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-primary);
+  color: var(--color-text-white);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stat-icon-box svg {
+  width: 24px;
+  height: 24px;
+}
+
+.stat-details h4 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text-heading);
+}
+
+.stat-details p {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   Core Banking Features (3 Floating Cards)
+   ========================================================================== */
+.features-section {
+  padding: 5rem 0;
+  background-color: var(--color-bg-white);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem 2rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border-subtle);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(139, 21, 25, 0.2);
+}
+
+.feature-icon-badge {
+  width: 48px;
+  height: 48px;
+  background-color: #fee2e2;
+  color: var(--color-primary);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: var(--transition);
+}
+
+.feature-card:hover .feature-icon-badge {
+  background-color: var(--color-primary);
+  color: var(--color-text-white);
+}
+
+.feature-icon-badge svg {
+  width: 24px;
+  height: 24px;
+}
+
+.feature-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text-heading);
+  margin-bottom: 0.75rem;
+}
+
+.feature-text {
+  font-size: 0.925rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Interactive Financial Calculators (FD & EMI)
+   ========================================================================== */
+.calculators-section {
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, var(--color-bg-body), #fff);
+}
+
+.calc-container {
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.calc-tabs {
+  display: flex;
+  background-color: #f1f3f5;
+  border-bottom: 1px solid var(--color-border);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.calc-tab-btn {
+  flex: 1;
+  min-width: 0;
+  padding: 1.15rem 1.25rem;
+  font-size: 0.98rem;
+  font-weight: 700;
+  border: none;
+  background: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: var(--transition);
+  text-align: center;
+}
+
+.calc-tab-btn.active {
+  background-color: var(--color-bg-white);
+  color: var(--color-primary);
+  border-top: 3px solid var(--color-primary);
+}
+
+.calc-content {
+  padding: 2.5rem;
+  display: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.calc-content.active {
+  display: block;
+}
+
+.calc-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.calc-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-text-heading);
+  min-width: 0;
+}
+
+.input-val-badge {
+  background-color: var(--color-primary-subtle);
+  color: var(--color-primary);
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.range-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  max-width: 100%;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: #e2e8f0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(139, 21, 25, 0.4);
+  transition: transform 0.15s ease;
+}
+
+.range-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.calc-select-input {
+  width: 100%;
+  max-width: 100%;
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  font-size: 0.92rem;
+  background: #ffffff;
+  color: var(--color-text-heading);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.calc-results-box {
+  background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+  color: var(--color-text-white);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem 2rem;
+  box-shadow: var(--shadow-crimson);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.calc-result-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.calc-result-item:last-child {
+  margin-bottom: 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.result-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.result-val {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.result-val.highlight {
+  color: var(--color-accent-gold-light);
+  font-size: 2.25rem;
+}
+
+/* ==========================================================================
+   Interest Rates Schedule Tables (Side-by-Side)
+   ========================================================================== */
+.rates-section {
+  padding: 5rem 0;
+  background-color: var(--color-bg-white);
+}
+
+.rates-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.rates-table-card {
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+}
+
+.rates-table-header {
+  background-color: var(--color-primary);
+  color: var(--color-text-white);
+  padding: 1.15rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.rates-table-header h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.rates-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.925rem;
+}
+
+.rates-table th {
+  background-color: #f8fafc;
+  color: var(--color-text-heading);
+  font-weight: 700;
+  text-align: left;
+  padding: 0.85rem 1.25rem;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.rates-table td {
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-main);
+}
+
+.rates-table tr:last-child td {
+  border-bottom: none;
+}
+
+.rates-table tr:hover td {
+  background-color: #fdf2f2;
+}
+
+.rates-badge {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* ==========================================================================
+   Branch Network & Interactive Switcher
+   ========================================================================== */
+.branches-section {
+  padding: 5rem 0;
+  background-color: var(--color-bg-warm);
+}
+
+.branches-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 2.5rem;
+  background-color: var(--color-bg-white);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-border);
+}
+
+.branch-selector-list {
+  background-color: #f8fafc;
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+}
+
+.branch-nav-item {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.branch-nav-item:hover {
+  background-color: #fff;
+}
+
+.branch-nav-item.active {
+  background-color: var(--color-bg-white);
+  border-left: 4px solid var(--color-primary);
+}
+
+.branch-nav-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--color-text-heading);
+}
+
+.branch-nav-item.active .branch-nav-title {
+  color: var(--color-primary);
+}
+
+.branch-nav-sub {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.branch-display-pane {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.branch-info-header {
+  margin-bottom: 1.5rem;
+}
+
+.branch-info-tag {
+  color: var(--color-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.branch-info-title {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text-heading);
+}
+
+.branch-meta-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.branch-meta-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+}
+
+.branch-meta-item svg {
+  width: 20px;
+  height: 20px;
+  color: var(--color-primary);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.btn-directions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  width: fit-content;
+  transition: var(--transition);
+}
+
+.btn-directions:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* ==========================================================================
+   Member Testimonials
+   ========================================================================== */
+.testimonials-section {
+  padding: 5rem 0;
+  background-color: var(--color-bg-white);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background-color: #fbfbfb;
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stars-rating {
+  color: #f59e0b;
+  display: flex;
+  gap: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-quote {
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.author-avatar {
+  width: 44px;
+  height: 44px;
+  background: var(--color-primary-tint);
+  color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.author-info h5 {
+  font-weight: 700;
+  color: var(--color-text-heading);
+}
+
+.author-info span {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+/* ==========================================================================
+   Footer (Karakulam Dark Burgundy Style)
+   ========================================================================== */
+.site-footer {
+  background-color: var(--color-primary-deep);
+  color: rgba(255, 255, 255, 0.85);
+  padding: 4.5rem 0 2rem;
+  font-size: 0.9rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.8fr 1fr;
+  gap: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.footer-col h4 {
+  color: var(--color-text-white);
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.footer-col h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--color-accent-gold);
+}
+
+.footer-brand-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-text-white);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  line-height: 1.25;
+}
+
+html[lang="ml"] .footer-brand-title {
+  font-family: var(--font-malayalam);
+  font-size: 1.2rem;
+}
+
+.footer-brand-sub {
+  font-size: 0.85rem;
+  color: var(--color-accent-gold-light);
+  margin-bottom: 1rem;
+}
+
+.footer-about-text {
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.coop-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+  color: var(--color-accent-gold-light);
+}
+
+.footer-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.footer-links-list a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-links-list a:hover {
+  color: var(--color-accent-gold-light);
+  padding-left: 4px;
+}
+
+.footer-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.footer-contact-item svg {
+  width: 18px;
+  height: 18px;
+  color: var(--color-accent-gold);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .hero-badge-overlay {
+    bottom: -10px;
+    left: 10px;
+  }
+  .services-grid, .features-grid, .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .heritage-grid {
+    grid-template-columns: 1fr;
+  }
+  .rates-grid {
+    grid-template-columns: 1fr;
+  }
+  .branches-layout {
+    grid-template-columns: 1fr;
+  }
+  .branch-selector-list {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1240px) {
+  .nav-link {
+    padding: 0 0.65rem;
+    font-size: 0.83rem;
+  }
+  .btn-contact-support {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.8rem;
+  }
+  .lang-toggle-btn {
+    padding: 0.42rem 0.65rem;
+    font-size: 0.8rem;
+  }
+  .bank-signboard-card {
+    min-width: 180px;
+  }
+  .signboard-line1,
+  .signboard-line2 {
+    font-size: 0.68rem;
+  }
+  .nav-action {
+    min-width: unset;
+    gap: 0.5rem;
+  }
+}
+
+/* Tablet / Medium Screens: Seamlessly switch to Mobile Navigation Drawer */
+@media (max-width: 1080px) {
+  .mobile-menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    background: #f8f9fa;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    padding: 0.45rem;
+    cursor: pointer;
+    color: #1e293b;
+    transition: var(--transition);
+  }
+  .mobile-menu-toggle:hover {
+    background-color: #f1f3f5;
+    color: #8b1519;
+    border-color: #8b1519;
+  }
+  .main-navigation {
+    position: fixed;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    flex-direction: column;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+    display: none;
+    height: auto;
+    max-height: calc(100vh - 68px);
+    overflow-y: auto;
+    margin-left: 0;
+    z-index: 999;
+    border-bottom: 3px solid #8b1519;
+  }
+  .main-navigation.open {
+    display: flex;
+  }
+  .nav-list {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.3rem;
+    align-items: stretch;
+    height: auto;
+  }
+  .nav-item {
+    width: 100%;
+    height: auto;
+  }
+  .nav-link {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    height: auto;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .nav-link:hover, .nav-link.active {
+    background-color: #fcf0f0;
+    color: #cf101a;
+  }
+  .nav-action {
+    margin-left: 0;
+    margin-top: 1.25rem;
+    width: 100%;
+    min-width: unset;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+  }
+  .lang-custom-wrapper {
+    width: 100%;
+  }
+  .lang-toggle-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.65rem 1rem;
+    font-size: 0.9rem;
+  }
+  .lang-custom-menu {
+    width: 100%;
+    position: static;
+    margin-top: 0.35rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  .btn-contact-support {
+    width: 100%;
+    justify-content: center;
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
+  .calc-layout {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+  .calc-content {
+    padding: 1.75rem 1.25rem;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .hero-badge-overlay {
+    bottom: -10px;
+    left: 10px;
+  }
+  .services-grid, .features-grid, .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .heritage-grid, .rates-grid, .branches-layout {
+    grid-template-columns: 1fr;
+  }
+  .rates-table-card {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .branch-selector-list {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .hero-title {
+    font-size: 1.85rem;
+  }
+  .services-grid, .features-grid, .testimonials-grid, .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .calc-tabs {
+    flex-direction: row;
+  }
+  .calc-tab-btn {
+    padding: 0.85rem 0.6rem;
+    font-size: 0.82rem;
+    line-height: 1.25;
+    text-align: center;
+  }
+  .calc-tab-btn svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+  .calc-content {
+    padding: 1.25rem 1rem;
+  }
+  .calc-results-box {
+    padding: 1.5rem 1.2rem;
+  }
+  .result-val {
+    font-size: 1.5rem;
+  }
+  .result-val.highlight {
+    font-size: 1.85rem;
+  }
+  .nav-container-fluid {
+    padding: 0 0.75rem;
+    height: 60px;
+  }
+  .main-navigation {
+    top: 60px;
+    max-height: calc(100vh - 60px);
+  }
+  .bank-signboard-card {
+    min-width: 165px;
+  }
+  .signboard-line1,
+  .signboard-line2 {
+    font-size: 0.65rem;
+  }
+  .signboard-emblem-sq {
+    width: 24px;
+    height: 24px;
+  }
+  .top-notice-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+  .calc-tabs {
+    flex-direction: column;
+  }
+  .calc-tab-btn {
+    padding: 0.85rem 1rem;
+    font-size: 0.88rem;
+    justify-content: flex-start;
+    border-top: none !important;
+    border-left: 3px solid transparent;
+  }
+  .calc-tab-btn.active {
+    border-left: 3px solid var(--color-primary);
+    background-color: #ffffff;
+  }
+  .calc-content {
+    padding: 1.15rem 0.75rem;
+  }
+  .input-label {
+    font-size: 0.88rem;
+  }
+  .input-val-badge {
+    font-size: 0.82rem;
+    padding: 0.2rem 0.5rem;
+  }
+}
