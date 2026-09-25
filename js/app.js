@@ -70,7 +70,37 @@ const I18N_DATA = {
     calc_tag: "PLAN YOUR FINANCES",
     calc_title: "Interactive Financial Calculators",
     branch_tag: "LOCATE US",
-    branch_title: "Our Branch Network"
+    branch_title: "Our Branch Network",
+    branch_desc: "Visit any of our 3 service branches across Parasuvaikkal and surrounding areas.",
+    branch_ho_nav_title: "Head Office & Main Branch",
+    branch_ned_nav_title: "Nediyamcode Branch",
+    branch_idi_nav_title: "Idichakkaplamoodu Branch",
+    branch_get_directions: "Get Directions on Map",
+    mds_table_title: "Monthly Deposit Scheme (MDS Chitties)",
+    mds_th_monthly: "Monthly Installment",
+    mds_th_duration: "Duration",
+    mds_th_sala: "Chitty Sala (Total Value)",
+    mds_th_auction: "Auction Privilege",
+    mds_badge_auction: "1st Month Auction",
+    mds_note_text: "✨ Official Assurance: All MDS Chitty schemes feature auctions starting from the 1st month itself. Regulated and protected under the Kerala Co-operative Societies Act.",
+    loan_cat_agri: "Agricultural Gold Loan",
+    loan_cat_gold: "Gold Loan (Swarna Panayam)",
+    loan_cat_shg: "Women's SHG Group Loan",
+    loan_cat_st: "Short Term (ST) Loan",
+    loan_cat_locker: "Safe Deposit Locker",
+    loan_cat_business: "Business & Mortgage Credit",
+    comm_med_title: "Neethi Medical Store",
+    comm_med_badge: "14% to 65% Price Discount",
+    comm_med_desc: "Providing top-quality Allopathic, Ayurvedic, and Veterinary medicines at subsidized cooperative rates. Enjoy free doorstep home delivery across the panchayat.",
+    comm_super_title: "Neethi Sahakarana Supermarket",
+    comm_super_badge: "Sahakarana Samriddhi Scheme",
+    comm_super_desc: "Quality provisions, household commodities, and festival goods at fair market rates. Join our popular ₹100 × 50 weeks festive savings scheme.",
+    comm_hall_title: "Bhaskaran Nair Memorial Auditorium",
+    comm_hall_badge: "Air-Conditioned & Affordable",
+    comm_hall_desc: "Fully furnished reception hall with modern amenities located at Head Office. Available at subsidized rental rates for weddings, celebrations, and cultural meets.",
+    comm_depot_title: "Fertilizer & Ration Depots",
+    comm_depot_badge: "Farmer Support & Fair Price",
+    comm_depot_desc: "Direct distribution of agricultural fertilizers, organic manures, and subsidized inputs to local farmers, alongside public ration retail services."
   },
   ml: {
     logo_line1: "പരശുവയ്ക്കൽ സർവ്വീസ്",
@@ -125,7 +155,37 @@ const I18N_DATA = {
     calc_tag: "സാമ്പത്തിക കാൽക്കുലേറ്റർ",
     calc_title: "നിക്ഷേപ, വായ്പാ കാൽക്കുലേറ്റർ",
     branch_tag: "ശാഖകൾ",
-    branch_title: "ഞങ്ങളുടെ ശാഖാ ശൃംഖല"
+    branch_title: "ഞങ്ങളുടെ ശാഖാ ശൃംഖല",
+    branch_desc: "പരശുവയ്ക്കലിലും പരിസരപ്രദേശങ്ങളിലുമുള്ള ഞങ്ങളുടെ 3 ശാഖകൾ സന്ദർശിക്കൂ.",
+    branch_ho_nav_title: "ഹെഡ് ഓഫീസ് & പ്രധാന ശാഖ",
+    branch_ned_nav_title: "നെടിയാംകോട് ശാഖ",
+    branch_idi_nav_title: "ഇടിച്ചക്കപ്ലാമൂട് ശാഖ",
+    branch_get_directions: "മാപ്പിൽ വഴി കാണുക",
+    mds_table_title: "പ്രതിമാസ നിക്ഷേപ പദ്ധതി (എം.ഡി.എസ് ചിട്ടി വിവരങ്ങൾ)",
+    mds_th_monthly: "പ്രതിമാസ അടവ്",
+    mds_th_duration: "കാലാവധി",
+    mds_th_sala: "ചിട്ടിത്തുക (ആകെ തുക)",
+    mds_th_auction: "ലേല വ്യവസ്ഥ",
+    mds_badge_auction: "ഒന്നാം മാസം ലേലം",
+    mds_note_text: "✨ ഉറപ്പ്: എല്ലാ എം.ഡി.എസ് ചിട്ടികളിലും ഒന്നാം മാസം മുതൽ ലേലത്തിൽ പങ്കെടുക്കാം. കേരള സഹകരണ വകുപ്പിന്റെ നിയമപ്രകാരം പൂർണ്ണ സുരക്ഷിതം.",
+    loan_cat_agri: "കാർഷിക സ്വർണ്ണപ്പണയ വായ്പ",
+    loan_cat_gold: "തങ്കപ്പണയ വായ്പ (സ്വർണ്ണപ്പണയം)",
+    loan_cat_shg: "വനിതാ സ്വയംസഹായ സംഘ വായ്പ (കൈത്താങ്ങ്)",
+    loan_cat_st: "ഹ്രസ്വകാല വായ്പ (ST Loan)",
+    loan_cat_locker: "സേഫ് ഡെപ്പോസിറ്റ് ലോക്കർ",
+    loan_cat_business: "വ്യാപാര & മോർട്ട്ഗേജ് വായ്പ",
+    comm_med_title: "നീതി മെഡിക്കൽ സ്റ്റോർ",
+    comm_med_badge: "14% മുതൽ 65% വരെ വിലക്കുറവ്",
+    comm_med_desc: "ഗുണനിലവാരമുള്ള അലോപ്പതി, ആയുർവേദ, വെറ്ററിനറി മരുന്നുകൾ വൻവിലക്കുറവിൽ. പഞ്ചായത്തിലുടനീളം സൗജന്യ ഡോർസ്റ്റെപ്പ് ഡെലിവറി.",
+    comm_super_title: "നീതി സഹകരണ സൂപ്പർമാർക്കറ്റ്",
+    comm_super_badge: "സഹകരണ സമൃദ്ധി പദ്ധതി",
+    comm_super_desc: "ഗുണമേന്മയുള്ള നിത്യോപയോഗ സാധനങ്ങളും പലചരക്കുകളും. ₹100 × 50 ആഴ്ചത്തെ ഉത്സവകാല സമ്പാദ്യ പദ്ധതിയിൽ പങ്കാളിയാകൂ.",
+    comm_hall_title: "ഭാസ്കരൻ നായർ മെമ്മോറിയൽ ഓഡിറ്റോറിയം",
+    comm_hall_badge: "എയർ കണ്ടീഷൻഡ് മിനി ഹാൾ",
+    comm_hall_desc: "വിവാഹങ്ങൾ, സ്വീകരണങ്ങൾ, യോഗങ്ങൾ എന്നിവയ്ക്ക് ഹെഡ് ഓഫീസ് കാമ്പസിലെ അത്യാധുനിക എയർ കണ്ടീഷൻഡ് ഹാൾ കുറഞ്ഞ വാടകയിൽ ലഭ്യമാണ്.",
+    comm_depot_title: "വളം & റേഷൻ ഡിപ്പോകൾ",
+    comm_depot_badge: "കർഷക ക്ഷേമം & ന്യായവില",
+    comm_depot_desc: "കർഷകർക്ക് ആവശ്യമായ രാസ-ജൈവ വളങ്ങൾ, കാർഷിക ഉപകരണങ്ങൾ, പൊതുവിതരണ റേഷൻ സേവനങ്ങൾ എന്നിവ ലഭ്യമാക്കുന്നു."
   }
 };
 
@@ -225,6 +285,11 @@ function initLanguageSwitcher() {
         el.textContent = data[key];
       }
     });
+
+    // Update active branch display
+    if (window.updateActiveBranchLanguage) {
+      window.updateActiveBranchLanguage();
+    }
 
     try {
       sessionStorage.setItem('pscb_lang', lang);
@@ -496,38 +561,70 @@ function initCalculators() {
 }
 
 /* ==========================================================================
-   4. Interactive Branch Switcher
+   4. Interactive Branch Switcher (Bilingual & Bracket-Free)
    ========================================================================== */
 function initBranchSelector() {
   const branchItems = document.querySelectorAll('.branch-nav-item');
   if (!branchItems.length) return;
 
+  let activeBranchKey = 'head-office';
+
   const branchData = {
     'head-office': {
-      tag: 'Head Office (ഹെഡ് ഓഫീസ്)',
-      title: 'Parasuvaikkal Head Office',
-      address: 'Parasuvaikkal P.O., Near Parassala, Thiruvananthapuram District, Kerala - 695508',
-      phone: '0471 - 2202024',
-      hours: 'Mon - Sat: 9:00 AM to 4:30 PM (2nd & 4th Sat Holidays)',
-      manager: 'President: P. Chandramohan (9995363550) | Secretary: Rakesh S (9447494989)',
+      en: {
+        tag: 'Head Office & Main Branch',
+        title: 'Parasuvaikkal Head Office',
+        address: 'Parasuvaikkal P.O., Near Parassala, Thiruvananthapuram District, Kerala - 695508',
+        phone: '0471 - 2202024',
+        hours: 'Mon - Sat: 9:00 AM to 4:30 PM (2nd & 4th Sat Holidays)',
+        manager: 'President: P. Chandramohan (9995363550) | Secretary: Rakesh S (9447494989)'
+      },
+      ml: {
+        tag: 'ഹെഡ് ഓഫീസ് & പ്രധാന ശാഖ',
+        title: 'പരശുവയ്ക്കൽ ഹെഡ് ഓഫീസ്',
+        address: 'പരശുവയ്ക്കൽ പി.ഒ., പാറശ്ശാലയ്ക്ക് സമീപം, തിരുവനന്തപുരം - 695508',
+        phone: '0471 - 2202024',
+        hours: 'തിങ്കൾ - ശനി: 9:00 AM മുതൽ 4:30 PM വരെ (രണ്ടാം, നാലാം ശനി അവധി)',
+        manager: 'പ്രസിഡന്റ്: പി. ചന്ദ്രമോഹൻ (9995363550) | സെക്രട്ടറി: രാകേഷ് എസ് (9447494989)'
+      },
       mapsUrl: 'https://maps.google.com/?q=Parasuvaikkal+Kerala'
     },
     'nediyamcode': {
-      tag: 'Service Branch (നെടിയാംകോട് ശാഖ)',
-      title: 'Nediyamcode Branch',
-      address: 'Nediyamcode, Parasuvaikkal P.O., Thiruvananthapuram, Kerala - 695508',
-      phone: '0471 - 2232024',
-      hours: 'Mon - Sat: 9:00 AM to 4:30 PM',
-      manager: 'Branch Phone: 0471-2232024 / Secretary: 9447494989',
+      en: {
+        tag: 'Service Branch',
+        title: 'Nediyamcode Branch',
+        address: 'Nediyamcode, Parasuvaikkal P.O., Thiruvananthapuram, Kerala - 695508',
+        phone: '0471 - 2232024',
+        hours: 'Mon - Sat: 9:00 AM to 4:30 PM',
+        manager: 'Branch Phone: 0471-2232024 / Secretary: 9447494989'
+      },
+      ml: {
+        tag: 'സർവ്വീസ് ശാഖ',
+        title: 'നെടിയാംകോട് ശാഖ',
+        address: 'നെടിയാംകോട്, പരശുവയ്ക്കൽ പി.ഒ., തിരുവനന്തപുരം - 695508',
+        phone: '0471 - 2232024',
+        hours: 'തിങ്കൾ - ശനി: 9:00 AM മുതൽ 4:30 PM വരെ',
+        manager: 'ശാഖാ ഫോൺ: 0471-2232024 / സെക്രട്ടറി: 9447494989'
+      },
       mapsUrl: 'https://maps.google.com/?q=Nediyamcode+Parasuvaikkal+Kerala'
     },
     'idichakkaplamoodu': {
-      tag: 'Service Branch (ഇടിച്ചക്കപ്ലാമൂട് ശാഖ)',
-      title: 'Idichakkaplamoodu Branch',
-      address: 'Idichakkaplamoodu, Parasuvaikkal P.O., Thiruvananthapuram, Kerala - 695508',
-      phone: '0471 - 2202020',
-      hours: 'Mon - Sat: 9:00 AM to 4:30 PM',
-      manager: 'Branch Phone: 0471-2202020 / President: 9995363550',
+      en: {
+        tag: 'Service Branch',
+        title: 'Idichakkaplamoodu Branch',
+        address: 'Idichakkaplamoodu, Parasuvaikkal P.O., Thiruvananthapuram, Kerala - 695508',
+        phone: '0471 - 2202020',
+        hours: 'Mon - Sat: 9:00 AM to 4:30 PM',
+        manager: 'Branch Phone: 0471-2202020 / President: 9995363550'
+      },
+      ml: {
+        tag: 'സർവ്വീസ് ശാഖ',
+        title: 'ഇടിച്ചക്കപ്ലാമൂട് ശാഖ',
+        address: 'ഇടിച്ചക്കപ്ലാമൂട്, പരശുവയ്ക്കൽ പി.ഒ., തിരുവനന്തപുരം - 695508',
+        phone: '0471 - 2202020',
+        hours: 'തിങ്കൾ - ശനി: 9:00 AM മുതൽ 4:30 PM വരെ',
+        manager: 'ശാഖാ ഫോൺ: 0471-2202020 / പ്രസിഡന്റ്: 9995363550'
+      },
       mapsUrl: 'https://maps.google.com/?q=Idichakkaplamoodu+Parasuvaikkal+Kerala'
     }
   };
@@ -540,24 +637,37 @@ function initBranchSelector() {
   const branchManager = document.getElementById('branch-manager-text');
   const branchMapBtn = document.getElementById('branch-map-link');
 
+  function updateDisplay() {
+    const currentLang = document.documentElement.lang || 'en';
+    const branchEntry = branchData[activeBranchKey];
+    if (!branchEntry) return;
+
+    const data = branchEntry[currentLang] || branchEntry.en;
+
+    if (branchTag) branchTag.textContent = data.tag;
+    if (branchTitle) branchTitle.textContent = data.title;
+    if (branchAddress) branchAddress.textContent = data.address;
+    if (branchPhone) branchPhone.textContent = data.phone;
+    if (branchHours) branchHours.textContent = data.hours;
+    if (branchManager) branchManager.textContent = data.manager;
+    if (branchMapBtn) branchMapBtn.setAttribute('href', branchEntry.mapsUrl);
+  }
+
   branchItems.forEach(item => {
     item.addEventListener('click', () => {
       branchItems.forEach(b => b.classList.remove('active'));
       item.classList.add('active');
 
-      const branchKey = item.getAttribute('data-branch');
-      const data = branchData[branchKey];
-      if (!data) return;
-
-      if (branchTag) branchTag.textContent = data.tag;
-      if (branchTitle) branchTitle.textContent = data.title;
-      if (branchAddress) branchAddress.textContent = data.address;
-      if (branchPhone) branchPhone.textContent = data.phone;
-      if (branchHours) branchHours.textContent = data.hours;
-      if (branchManager) branchManager.textContent = data.manager;
-      if (branchMapBtn) branchMapBtn.setAttribute('href', data.mapsUrl);
+      activeBranchKey = item.getAttribute('data-branch') || 'head-office';
+      updateDisplay();
     });
   });
+
+  window.updateActiveBranchLanguage = function() {
+    updateDisplay();
+  };
+
+  updateDisplay();
 }
 
 /* ==========================================================================
