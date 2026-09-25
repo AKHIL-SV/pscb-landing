@@ -49,11 +49,14 @@
 * **Fixed Deposit (FD) Calculator**: Sliders from ₹10,000 to ₹25,00,000, 1 to 10 Years, with Senior Citizen bonus (+0.50% Extra: up to 9.00%) and quarterly compounding.
 * **Loan EMI Calculator**: Sliders for Loan Amount, Interest Rate (8.0% – 15.0%), and Tenure (1 to 15 Years) with real-time monthly payment calculation.
 
-### 📍 6. Real Branch Network Locator
+### 🏛️ 6. Official Leadership & Governance (ഭരണസമിതി & നേതൃത്വം)
+* **Managing Committee**: President: **P. Chandramohan** (`9995363550`) | Secretary: **Rakesh S** (`9447494989`) | Elected Board of Directors.
+* **Bank at a Glance**: Founded in **1968** (50+ years), **3 Service Branches**, **Class-1 Special Grade (Reg No: 663)**, **100% Deposit Guarantee** under Kerala Co-operative Guarantee Fund Board.
+
+### 📍 7. Real Branch Network Locator
 * **Head Office & Main Branch**: Parasuvaikkal Junction • Ph: `0471-2202024`
 * **Nediyamcode Branch**: Parasuvaikkal P.O. • Ph: `0471-2232024`
 * **Idichakkaplamoodu Branch**: Parasuvaikkal P.O. • Ph: `0471-2202020`
-* **Leadership**: President: **P. Chandramohan** (`9995363550`) | Secretary: **Rakesh S** (`9447494989`)
 
 ---
 
@@ -76,9 +79,9 @@ pscb-landing/
 ├── README.md             # Comprehensive project documentation
 ├── server.js             # Local Node.js development server (no-cache headers)
 ├── css/
-│   └── styles.css        # Responsive stylesheet & design system (v11)
+│   └── styles.css        # Responsive stylesheet & design system (v13)
 ├── js/
-│   └── app.js            # Bilingual engine, calculators, ticker & branch switcher (v6)
+│   └── app.js            # Bilingual engine, calculators, ticker, branch switcher & governance (v8)
 └── assets/
     ├── logo/
     │   └── app_logo.png  # Official bank emblem (used as header logo & favicon)
