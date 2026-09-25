@@ -424,24 +424,24 @@ html[lang="ml"] .lang-menu-item[data-lang="ml"] {
   box-shadow: 0 4px 10px rgba(163, 35, 29, 0.35);
 }
 
-/* Dedicated compact typography & spacing for Malayalam navigation to eliminate overflow */
+/* Dedicated typography & spacing for Malayalam navigation */
 html[lang="ml"] .nav-link {
   font-family: var(--font-malayalam);
-  font-size: 0.78rem;
-  padding: 0 0.55rem;
-  letter-spacing: -0.2px;
+  font-size: 0.84rem;
+  padding: 0 0.85rem;
+  letter-spacing: -0.1px;
   white-space: nowrap !important;
 }
 
 html[lang="ml"] .nav-link.active {
-  padding: 0 0.75rem;
+  padding: 0 0.95rem;
 }
 
 html[lang="ml"] .btn-contact-support {
   font-family: var(--font-malayalam);
-  font-size: 0.76rem;
-  padding: 0.42rem 0.85rem;
-  letter-spacing: -0.2px;
+  font-size: 0.8rem;
+  padding: 0.48rem 1rem;
+  letter-spacing: -0.1px;
   white-space: nowrap !important;
 }
 
