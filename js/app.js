@@ -258,6 +258,8 @@ function initLanguageSwitcher() {
     if (!data) return;
 
     document.documentElement.lang = lang;
+    document.documentElement.setAttribute('translate', 'no');
+    document.documentElement.classList.add('notranslate');
 
     // Update active label on custom dropdown button
     if (currentText) {
